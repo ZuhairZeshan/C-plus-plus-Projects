@@ -1,0 +1,100 @@
+#include<iostream>
+#include<cstdlib>
+#include<stdlib.h>
+#include<windows.h>
+
+using namespace std;
+
+void load(){
+	int i,j;
+	int a=177,b=219; // 176,175
+	cout<<"\t\t\t\t         ";
+	
+	for(j=0;j<25;j++)
+		cout<<(char)a;
+	cout<<"]\r";
+	cout<<"\t\t\t\tLoading [";
+	for(i=0;i<25;i++){
+		Sleep(100);
+		cout<<(char)b;
+	}
+	cout<<"]\n\n";
+}
+
+
+int main(){
+
+	
+	load();
+	
+	
+	int num1,num2;
+	int ch;
+	float ans;
+	
+
+	
+
+while(1){
+
+	cout<<"\t\t\t\t\t\tSimple Calculator"<<endl<<endl;
+	
+	
+	cout<<"Press 1 for Addition"<<endl;
+	cout<<"Press 2 for Subraction"<<endl;
+	cout<<"Press 3 for Multiplication"<<endl;
+	cout<<"Press 4 for Division"<<endl;
+	cout<<"Press 0 to Exit"<<endl;
+	
+	
+	cout<<"Enter Your Choice = ";
+	cin>>ch;
+	
+	if(ch == 0){
+		break;
+	}
+	
+	cout<<endl<<endl;
+	
+	cout<<"Enter First Number = ";
+	cin>>num1;
+    cout<<"Enter Second Number = ";
+	cin>>num2;
+	
+	
+	
+	if(ch == 1){
+		ans=num1+num2;
+		cout<<"Addition = "<<ans<<endl;
+	}else if(ch == 2){
+		ans=num1-num2;
+		cout<<"Subraction = "<<ans<<endl;
+	}else if(ch == 3){
+		ans=num1*num2;
+		cout<<"Multiplication = "<<ans<<endl;
+	}else if(ch == 4){
+		ans=num1/num2;
+		cout<<"Division = "<<ans<<endl;
+	}else{
+		cout<<"Invalid Choice Enter!"<<endl;
+	}
+	
+	Sleep(3000);
+	system("cls");
+	
+	
+		
+  }
+  
+  system("cls");
+  cout<<"\t\t\t\t\t\tTHANK YOU!"<<endl;
+  
+  
+  
+}
+
+
+
+
+
+
