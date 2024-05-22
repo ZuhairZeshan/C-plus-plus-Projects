@@ -1,0 +1,1474 @@
+#include<iostream>                        
+#include <fstream> 
+#include<string>
+#include<conio.h>//getch()
+#include<stdlib.h>
+#include<stdio.h>//for loading 
+#include<windows.h>// for sleep
+
+#include<cstdio>
+#include <cstdlib> // all for random
+#include <ctime>  
+
+using namespace std;
+
+void display() {
+
+	char c1 = 219, c2 = 220, c3 = 223, tr = 187, br = 188, tl = 201, bl = 200, h = 205, v = 186;
+	cout << tl; for (int i = 0; i < 107; i++) cout << h; cout << tr << "\n";
+	//cout << "|-----------------------------------------------------------------------------------------------------------|\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	//fast - done
+	cout << v << " \t\t\t\t\t  " << c2 << c2 << c2 << c2 << "  " << c2 << c2 << c2 << "   " << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c2 << "                                            " << v << "\n";
+	cout << v << " \t\t\t\t\t  " << c1 << c2 << c2 << c2 << " " << c1 << c2 << c2 << c2 << c1 << " " << c1 << c2 << c2 << c2 << c2 << "   " << c1 << "                                              " << v << "\n";
+	cout << v << " \t\t\t\t\t  " << c1 << "    " << c1 << "   " << c1 << " " << c2 << c2 << c2 << c2 << c3 << "   " << c1 << "                                              " << v << "\n";
+	//mapping - done
+	cout << v << "                                                                                                           " << v << "\n";
+	cout << v << " \t\t\t\t" << c2 << c2 << "   " << c2 << c2 << "  " << c2 << c2 << c2 << "  " << c2 << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c2 << " " << c2 << c2 << "   " << c2 << "  " << c2 << c2 << c2 << c2 << "                                " << v << "\n";
+	cout << v << " \t\t\t\t" << c1 << " " << c3 << c2 << c3 << " " << c1 << " " << c1 << c2 << c2 << c2 << c1 << " " << c1 << c2 << c2 << c2 << c1 << " " << c1 << c2 << c2 << c2 << c1 << "   " << c1 << "   " << c1 << " " << c3 << c2 << " " << c1 << " " << c1 << "  " << c2 << c2 << "                                " << v << "\n";
+	cout << v << " \t\t\t\t" << c1 << "     " << c1 << " " << c1 << "   " << c1 << " " << c1 << "     " << c1 << "     " << c2 << c2 << c1 << c2 << c2 << " " << c1 << "   " << c3 << c1 << " " << c1 << c2 << c1 << "  " << c1 << " ,                             " << v << "\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	//restaurant
+	cout << v << " \t\t\t  " << c2 << c2 << c2 << c2 << "  " << c2 << c2 << c2 << c2 << "  " << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c2 << "  " << c2 << c2 << c2 << "  " << c2 << "   " << c2 << " " << c2 << c2 << c2 << c2 << "   " << c2 << c2 << c2 << "  " << c2 << c2 << "   " << c2 << " " << c2 << c2 << c2 << c2 << c2 << "                       " << v << "\n";
+	cout << v << " \t\t\t  " << c1 << "   " << c1 << " " << c1 << c2 << c2 << c2 << " " << c1 << c2 << c2 << c2 << c2 << "   " << c1 << "   " << c1 << c2 << c2 << c2 << c1 << " " << c1 << "   " << c1 << " " << c1 << "   " << c1 << " " << c1 << c2 << c2 << c2 << c1 << " " << c1 << " " << c3 << c2 << " " << c1 << "   " << c1 << "                         " << v << "\n";
+	cout << v << " \t\t\t  " << c1 << c3 << c3 << c3 << c2 << " " << c1 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c1 << "   " << c1 << "   " << c1 << "   " << c1 << " " << c1 << c2 << c2 << c2 << c1 << " " << c1 << c3 << c3 << c3 << c2 << " " << c1 << "   " << c1 << " " << c1 << "   " << c3 << c1 << "   " << c1 << "                         " << v << "\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	//and - done
+	cout << v << " \t\t\t\t\t       " << c2 << c2 << c2 << "  " << c2 << c2 << "   " << c2 << " " << c2 << c2 << c2 << c2 << "                                             " << v << "\n";
+	cout << v << " \t\t\t\t\t      " << c1 << c2 << c2 << c2 << c1 << " " << c1 << " " << c3 << c2 << " " << c1 << " " << c1 << "   " << c1 << "                                            " << v << "\n";
+	cout << v << " \t\t\t\t\t      " << c1 << "   " << c1 << " " << c1 << "   " << c3 << c1 << " " << c1 << c2 << c2 << c2 << c3 << "                                            " << v << "\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	//testing
+	cout << v << " \t     " << c2 << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << "  " << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c2 << " " << c2 << c2 << "   " << c2 << "  " << c2 << c2 << c2 << c2 << "     "		/*service*/ << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << "  " << c2 << "   " << c2 << " " << c2 << c2 << c2 << c2 << c2 << "  " << c2 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << "           " << v << "\n";
+	cout << v << " \t       " << c1 << "   " << c1 << c2 << c2 << c2 << " " << c1 << c2 << c2 << c2 << c2 << "   " << c1 << "     " << c1 << "   " << c1 << " " << c3 << c2 << " " << c1 << " " << c1 << "  " << c2 << c2 << "    "													/*service*/ << c1 << c2 << c2 << c2 << c2 << " " << c1 << c2 << c2 << c2 << " " << c1 << "   " << c1 << " " << c1 << "   " << c1 << "   " << c1 << "   " << c1 << "     " << c1 << c2 << c2 << c2 << "           " << v << "\n";
+	cout << v << " \t       " << c1 << "   " << c1 << c2 << c2 << c2 << " " << c2 << c2 << c2 << c2 << c3 << "   " << c1 << "   " << c2 << c2 << c1 << c2 << c2 << " " << c1 << "   " << c3 << c1 << " " << c1 << c2 << c1 << "  " << c1 << "   "									/*service*/ << c2 << c2 << c2 << c2 << c3 << " " << c1 << c2 << c2 << c2 << " " << c1 << c3 << c3 << c3 << c2 << "  " << c3 << c2 << c3 << "  " << c2 << c2 << c1 << c2 << c2 << " " << c3 << c2 << c2 << c2 << c2 << " " << c1 << c2 << c2 << c2 << "           " << v << "\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	cout << v << "                                                                                                           " << v << "\n";
+	//cout << "|___________________________________________________________________________________________________________|\n";
+	cout << bl; for (int i = 0; i < 107; i++) cout << h; cout << br << "\n";
+
+}
+
+
+void load() {
+	int i, j;
+	int a = 177, b = 219; // 176,175
+	printf("\t\t\t\t         ");
+	for (j = 0; j < 25; j++)
+		printf("%c", a);
+	printf("]\r");
+	printf("\t\t\t\tLoading [");
+	for (i = 0; i < 25; i++) {
+		Sleep(100);
+		printf("%c", b);
+	}
+	printf("]\n\n");
+}
+
+
+/// //////////////////////////////////////////////////testing service///////////////////////////////////////////////////
+
+class testing {
+
+	long int ARNnumber;
+	long int challanno;
+
+	string fathername, studentname, address, gender, dateofbirth, city;
+	long long fathercnic, studentcnic;
+	int fathersalary, dependentpeople;
+	string country, fatheroccupation, motheroccupation, school, college;
+	float matric, inter;
+	string first, second, third, fourth, fifth;
+
+
+public:
+	testing() {}
+	testing(long int n)
+	{
+		ARNnumber = n;
+	}
+	void setARNnumber(long int n)
+	{
+		this->ARNnumber = n;
+	}
+	long int getARNnumber()
+	{
+		return ARNnumber;
+	}
+	void setchallanno(long int num)
+	{
+		this->challanno = num;
+	}
+	long int getchallanno()
+	{
+		return challanno;
+	}
+	void set1(string fathername, string studentname, string address, string gender, string dateofbirth, string country, string city, long long fathercnic, long long studentcnic) {
+
+		this->fathername = fathername;
+		this->studentname = studentname;
+		this->address = address;
+		this->gender = gender;
+		this->dateofbirth = dateofbirth;
+		this->country = country;
+		this->city = city;
+		this->fathercnic = fathercnic;
+		this->studentcnic = studentcnic;
+
+	}
+
+	void set2(int fathersalary, int dependentpeople, string fatheroccupation, string motheroccupation) {
+
+		this->fathersalary = fathersalary;
+		this->dependentpeople = dependentpeople;
+		this->fatheroccupation = fatheroccupation;
+		this->motheroccupation = motheroccupation;
+
+	}
+
+
+	void set3(string school, string college, float matric, float inter) {
+
+		this->school = school;
+		this->college = college;
+		this->matric = matric;
+		this->inter = inter;
+
+	}
+
+	void set4(string first, string second, string third, string fourth, string fifth) {
+		this->first = first;
+		this->second = second;
+		this->third = third;
+		this->fourth = fourth;
+		this->fifth = fifth;
+	}
+
+	string getFatherName() { return fathername; }
+	string getStudentName() { return studentname; }
+	string getAddress() { return address; }
+	string getGender() { return gender; }
+	string getDateOfBirth() { return dateofbirth; }
+	string getCity() { return city; }
+	long long getFatherCnic() { return fathercnic; }
+	long long getStudentCnic() { return studentcnic; }
+
+
+	int getFatherSalary() { return fathersalary; }
+	int getDependentPeople() { return dependentpeople; }
+	string getCountry() { return country; }
+	string getFatherOccupation() { return fatheroccupation; }
+	string getMotherOccupation() { return motheroccupation; }
+
+
+	string getSchool() { return school; }
+	string getCollege() { return college; }
+	float getMatric() { return matric; }
+	float getInter() { return inter; }
+
+
+	string getFirst() { return first; }
+	string getSecond() { return second; }
+	string getThird() { return third; }
+	string getFourth() { return fourth; }
+	string getFifth() { return fifth; }
+
+
+};
+
+///////////classrom///////////////
+class room {
+
+	static int studentscapacity;//30
+	static int i;
+	static int date;//13
+	int month = 7;//7
+	int year = 2023;
+	static int time1, time2;
+	//9 to 4 : 9 to 10 ,1030 to 1130 ,12 to 1,130 to 230 , 3 to 4
+
+public:
+	void display() {
+		cout << "------------------------------------------------------------------------------------------------" << endl;
+		cout << "                                   ASSIGNING ROOM                                               " << endl;
+		cout << "------------------------------------------------------------------------------------------------" << endl;
+	}
+	void assignroom() {
+
+		cout << "Your Test is at:\n";
+		if (studentscapacity <= 30 && i <= 20 && time1 <= 3 && time2 <= 4) {
+			cout << date << "-" << month << "-" << year << endl;
+			cout << "Venue Lab-" << i << endl;
+			cout << "At Around = " << time1 << " to " << time2 << endl;
+			studentscapacity++;
+		}
+		else if (studentscapacity > 30 || i > 20 || (time1 > 3 && time2 > 4)) {
+			if (studentscapacity > 30) {
+				i++;
+				studentscapacity = 0;
+				cout << date << "-" << month << "-" << year << endl;
+				cout << "Venue Lab-" << i << endl;
+				cout << "At Around = " << time1 << " to " << time2;
+
+			}
+			else if (i > 20) {
+				i = 1;
+				time1 += 2;
+				time2 += 2;
+				cout << date << "-" << month << "-" << year << endl;
+				cout << "Venue Lab-" << i << endl;
+				cout << "At Around = " << time1 << " to " << time2;
+
+
+			}
+			else if (time1 > 3 && time2 > 4) {
+				date++;
+				time1 = 9;
+				time2 = 10;
+				cout << date << "-" << month << "-" << year << endl;
+				cout << "Venue Lab-" << i << endl;
+				cout << "At Around = " << time1 << " to " << time2;
+
+			}
+
+		}
+
+	}
+
+};
+int room::studentscapacity = 0;
+int room::date = 13;
+int room::i = 1;
+int room::time1 = 9;//+2
+int room::time2 = 10;//+2
+
+
+////////////////////////////restaurant///////////////////////////////////////////////////////////////////
+class restaurant {
+
+protected:
+	long long  no; int a;
+	int	opt[10], q[10], bill[10];
+	
+
+public:
+	int totalbill=0;
+	double time = 0.0;
+	virtual void itemchosing(int it) {}
+	virtual void receipt(int it,string na) {}
+
+
+	int gettotalbill() {
+		return totalbill;
+		
+	}
+	double gettime() {
+		return time;
+	}
+
+	void paying(int pay) {
+
+		if (pay == 1) {
+			cout << "Enter Mobile Number  = ";
+			cin >> no;
+			cout << "Enter Amount = ";
+			cin >> a;
+			cout << "\nMoney Has Been Paid" << endl;
+		}
+		else if (pay == 2) {
+
+		}
+
+	}
+
+};
+
+class shawarma_corner : public restaurant {
+protected:
+	int price1[5] = { 170,130,150,150,170 };
+
+
+public:
+	void itemchosing(int it) {
+		for (int i = 0; i < it; i++) {
+			cout << "Enter Item No. = ";
+			cin >> opt[i];
+			cout << "Enter Quantity = ";
+			cin >> q[i];
+
+			bill[i] = price1[opt[i]] * q[i];
+			totalbill += bill[i];
+			if (q[i] <= 2) {
+				time += 2.5;
+			}
+			if (q[i] > 2) {
+				time += 3;
+			}
+		}
+	}
+
+	void receipt(int it,string na) {
+
+		string shawarma[5] = { "Zinger Shawarma  ","Chicken Shawarm  ", "Mayo Shawarma    ", "Mekroni Shawarma ", "Cheese Shawarma  " };
+		cout << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+		for (int i = 0; i < it; i++) {
+			cout << shawarma[opt[i]] << "   " << q[i] << "   " << bill[i];
+			cout << endl;
+		}
+
+		ofstream rfile(na, ios::app);
+
+		if (rfile.is_open()) {
+			rfile << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+			for (int i = 0; i < it; i++) {
+				rfile << shawarma[opt[i]] << "   " << q[i] << "   " << bill[i];
+				rfile << endl;
+			}
+			rfile.close(); 
+			
+		}
+		
+
+
+	}
+
+
+};
+class dhaba_corner : public restaurant {
+protected:
+	int price2[6] = { 130,130,50,80,150,180 };
+
+
+public:
+	void itemchosing(int it) {
+		for (int i = 0; i < it; i++) {
+			cout << "Enter Item No. = ";
+			cin >> opt[i];
+			cout << "Enter Quantity = ";
+			cin >> q[i];
+
+			bill[i] = price2[opt[i]] * q[i];
+			totalbill += bill[i];
+			if (q[i] <= 2) {
+				time += 2.5;
+			}
+			if (q[i] > 2) {
+				time += 3;
+			}
+		}
+	}
+
+	void receipt(int it,string na) {
+
+		string dhaba[6] = { "Mayo Roll       ","Seekh Kaba Roll ","Special Tea     ","Chicken Sandwich","Chicken Tikka   ","Malai Seekh Boti"};
+		cout << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+		for (int i = 0; i < it; i++) {
+			cout << dhaba[opt[i]] << "   " << q[i] << "   " << bill[i];
+			cout << endl;
+		}
+		ofstream rfile(na, ios::app);
+
+		if (rfile.is_open()) {
+			rfile << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+			for (int i = 0; i < it; i++) {
+				rfile << dhaba[opt[i]] << "   " << q[i] << "   " << bill[i];
+				rfile << endl;
+			}
+			rfile.close();
+
+		}
+
+	}
+
+
+
+};
+class ee_canteen : public restaurant {
+protected:
+	int price3[8] = { 180,150,200,220,150,180,100 };
+
+
+public:
+	void itemchosing(int it) {
+		for (int i = 0; i < it; i++) {
+			cout << "Enter Item No. = ";
+			cin >> opt[i];
+			cout << "Enter Quantity = ";
+			cin >> q[i];
+
+			bill[i] = price3[opt[i]] * q[i];
+			totalbill += bill[i];
+			if (q[i] <= 2) {
+				time += 2.5;
+			}
+			if (q[i] > 2) {
+				time += 3;
+			}
+		}
+	}
+
+	void receipt(int it,string na) {
+
+		string e_canteen[8] = { "Chicken Biryani ","Aloo Biryani    ","Pizza Fries     ","Zinger Burger   ","Beef Burger     ","Chicken Sandwich","Zinger Roll     ","Chicken Roll    "};
+		cout << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+		for (int i = 0; i < it; i++) {
+			cout << e_canteen[opt[i]] << "   " << q[i] << "   " << bill[i];
+			cout << endl;
+		}
+		ofstream rfile(na, ios::app);
+
+		if (rfile.is_open()) {
+			rfile << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+			for (int i = 0; i < it; i++) {
+				rfile << e_canteen[opt[i]] << "   " << q[i] << "   " << bill[i];
+				rfile << endl;
+			}
+			rfile.close();
+
+		}
+	}
+
+};
+
+
+class ee_staff_canteen : public restaurant {
+protected:
+	int price4[8] = { 50,60,50,80,80,40,60,70 };
+
+public:
+	void itemchosing(int it) {
+		for (int i = 0; i < it; i++) {
+			cout << "Enter Item No. = ";
+			cin >> opt[i];
+			cout << "Enter Quantity = ";
+			cin >> q[i];
+
+			bill[i] = price4[opt[i]] * q[i];
+			totalbill += bill[i];
+			if (q[i] <= 2) {
+				time += 2.5;
+			}
+			if (q[i] > 2) {
+				time += 3;
+			}
+		}
+	}
+
+	void receipt(int it,string na) {
+
+		string staff_canteen[8] = { "Lacha Paratha   ","Chai            ","Spring Roll     ","Mini Pizza      ","Aloo Paratha    ","Samosa          ","Knorr Noodles   ","Coffee          "};
+		cout << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+		for (int i = 0; i < it; i++) {
+			cout << staff_canteen[opt[i]] << "   " << q[i] << "   " << bill[i];
+			cout << endl;
+		}
+		ofstream rfile(na, ios::app);
+
+		if (rfile.is_open()) {
+			rfile << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+			for (int i = 0; i < it; i++) {
+				rfile << staff_canteen[opt[i]] << "   " << q[i] << "   " << bill[i];
+				rfile << endl;
+			}
+			rfile.close();
+
+		}
+	}
+
+};
+
+
+class cafeteria : public restaurant {
+protected:
+
+	int price5[3] = { 50,200,80};
+
+
+public:
+	void itemchosing(int it) {
+		for (int i = 0; i < it; i++) {
+			cout << "Enter Item No. = ";
+			cin >> opt[i];
+			cout << "Enter Quantity = ";
+			cin >> q[i];
+
+			bill[i] = price5[opt[i]] * q[i];
+			totalbill += bill[i];
+			if (q[i] <= 2) {
+				time += 2.5;
+			}
+			if (q[i] > 2) {
+				time += 3;
+			}
+		}
+	}
+
+	void receipt(int it,string na) {
+
+		string cafeteria[3] = { "Spring Roll     ","Chicken biryani " ,"Chicken Sandwich"};
+		cout << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+		for (int i = 0; i < it; i++) {
+			cout << cafeteria[opt[i]] << "   " << q[i] << "   " << bill[i];
+			cout << endl;
+		}
+		ofstream rfile(na, ios::app);
+
+		if (rfile.is_open()) {
+			rfile << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+			for (int i = 0; i < it; i++) {
+				rfile << cafeteria[opt[i]] << "   " << q[i] << "   " << bill[i];
+				rfile << endl;
+			}
+			rfile.close();
+
+		}
+
+	}
+
+
+};
+
+
+
+class fry_guy : public restaurant {
+protected:
+	int price6[3] = { 230,170,60 };
+
+
+public:
+	void itemchosing(int it) {
+		for (int i = 0; i < it; i++) {
+			cout << "Enter Item No. = ";
+			cin >> opt[i];
+			cout << "Enter Quantity = ";
+			cin >> q[i];
+
+			bill[i] = price6[opt[i]] * q[i];
+			totalbill += bill[i];
+			if (q[i] <= 2) {
+				time += 2.5;
+			}
+			if (q[i] > 2) {
+				time += 3;
+			}
+		}
+	}
+
+	void receipt(int it,string na) {
+
+		string fryguy[3] = { "Pizza fries     ","Loaded fries    ","Flavour Fries   "};
+		cout << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+		for (int i = 0; i < it; i++) {
+			cout << fryguy[opt[i]] << "   " << q[i] << "   " << bill[i];
+			cout << endl;
+		}
+		ofstream rfile(na, ios::app);
+
+		if (rfile.is_open()) {
+			rfile << "Item Name       " << "   " << "Qt" << "   " << "Rates" << endl;
+			for (int i = 0; i < it; i++) {
+				rfile << fryguy[opt[i]] << "   " << q[i] << "   " << bill[i];
+				rfile << endl;
+			}
+			rfile.close();
+
+		}
+
+	}
+
+
+};
+
+////////////////////////////mapping class///////////////////////////////////////////////////////////////////
+class mapping {
+
+public:
+    void individualthings(string filename) {
+
+        string line, find;
+
+        while (find != "e") {
+            cout << "Press e to exit\nEnter The Name  = ";
+            cin >> find;
+
+            fstream file;
+            string word;
+
+            file.open(filename.c_str());
+            while (file >> word) { //take word and print
+                if (word == find) {
+
+                    getline(file, line);
+                    cout << word << line << endl;
+                }
+            }
+            cout << endl;
+        }
+    }
+
+    void getlist(string filename) {
+        fstream myfile;
+        myfile.open(filename, ios::in);
+
+        string line;
+
+        while (getline(myfile, line)) {
+            cout << line << endl;
+        }
+    }
+
+};
+
+/// <summary>
+///////////////////////////////////////////////account///////////////////////////
+/// </summary>
+
+class Account {
+    string username, password;
+
+public:
+	bool is_valid_password(const std::string& password) {
+		bool has_digit = false;
+		bool has_alpha = false;
+		for (char c : password) {
+			if (std::isdigit(c)) {
+				has_digit = true;
+			}
+			if (std::isalpha(c)) {
+				has_alpha = true;
+			}
+			if (has_digit && has_alpha) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+    void sign_up() {
+        cout << "Please enter a username: ";
+        cin >> username;
+        cout << "Please enter a password: ";
+        cin >> password;
+		
+		try {
+			if (!is_valid_password(password)) {
+				throw password;
+			}
+		
+		}catch (int ex) {
+			cout << "Error: " << endl;
+		}
+		
+        system("cls");
+
+		ofstream userfile("signin.txt",ios::app); 
+
+		if (userfile.is_open()) { 
+			userfile << username<<" "<<password<<"\n";
+			userfile.close(); 
+			
+		}
+    }
+
+    bool sign_in() {
+        string user, pass,u,p;
+        cout << "Please enter your username: ";
+        cin >> user;
+        cout << "Please enter your password: ";
+        cin >> pass;
+        
+		
+		char ch;
+		int passflag = 0;
+		fstream fin("signin.txt", fstream::in);
+		while (fin >> noskipws >> ch) {
+			if (passflag == 0) {
+				if (ch == ' ') {
+					
+						passflag = 1;
+					
+				}
+				else {
+					u += ch;
+				}
+			}
+			else  {
+				if (ch == '\n') {
+					
+					if (u == user && p == pass) {
+						cout << "Log in successful!" << endl;
+						passflag = 0;
+						u = "";
+						p = "";
+						return true;
+						
+					}
+					
+					passflag = 0;
+					u = "";
+					p = "";
+				}
+				else {
+					p += ch;
+					
+				}
+			}
+		}
+		passflag = 0;
+		u = "";
+		p = "";
+		cout << "Check Password and Username" << endl;
+		return false;
+        
+    }
+
+};
+
+
+
+
+int main() {
+
+    int choice, z = 5;
+    Account obj1;
+
+    int select = 3;
+    mapping obj;
+
+	int sel=10;
+
+
+	string sn, fn, address, gender, country, city, dob;
+	long long scnic, fcnic;
+	char form;
+	int countstudents = 0;
+	string fo, mo, free;
+	int fs, dep;
+	string fp, sp, tp, fourp, fifp;
+	int ch2;
+	string school, college;
+	float mp, ip;
+	int ch, nts, sat1, sat2, test;
+	int flag;
+
+	display();
+
+    while (z != 1) {
+
+        cout << "\n1. Sign up\n2. Sign in" << endl;
+        cin >> choice;
+
+        if (choice == 1) {
+            obj1.sign_up();
+
+        }
+        else if (choice == 2) {
+            z = obj1.sign_in();
+        }
+
+
+    }
+    _getch();
+    system("cls");
+
+
+   //fast mrt display///////////////////////////////////////////////////////////////////////////////////
+    
+	load();
+	
+	while (sel != 4) {
+
+		system("cls");
+
+		cout << "Press 1 for Mapping\nPress 2 for Restaurants\nPress 3 for Test Service\nPress 4 to Exit\n";
+		cin >> sel;
+
+		system("cls");
+
+        if (sel == 1) {////////////////////////////mapping///////////////////////////////////////////////////////////////////
+           
+			while (select != -1) {
+
+                cout << "Press 1 for CLassrooms\nPress 2 for Teacher`srooms\nPress 3 for Management\n";
+                cout << "Press 4 for Co-Curriculum Things\nPress 5 for whole List of Fast\nPress -1 to Exit\n";
+                cin >> select;
+
+                system("CLS");
+
+                if (select == 1) {
+                    obj.individualthings("classrooms.txt");
+                }
+                else if (select == 2) {
+                    obj.individualthings("teachersrooms.txt");
+                }
+                else if (select == 3) {
+                    obj.individualthings("management.txt");
+                }
+                else if (select == 4) {
+                    obj.individualthings("cocuriculum.txt");
+                }
+                else if (select == 5) {
+                    obj.getlist("classrooms.txt");
+                    _getch();
+                    system("CLS");
+
+                    obj.getlist("teachersrooms.txt");
+                    _getch();
+                    system("CLS");
+
+                    obj.getlist("management.txt");
+                    _getch();
+                    system("CLS");
+
+                    obj.getlist("cocuriculum.txt");
+                    _getch();
+                    system("CLS");
+
+
+                }
+
+                system("CLS");
+            }
+        }
+        else if (sel == 2) {////////////////////////////restaurant///////////////////////////////////////////////////////////////////
+
+			string na, free;
+			int opt = 10, it, pay;
+
+			shawarma_corner obj1;
+			dhaba_corner obj2;
+			ee_canteen obj3;
+			ee_staff_canteen obj4;
+			cafeteria c1;
+			fry_guy f1;
+
+			cout << "Enter Your Name = ";
+			cin >> na;
+
+			while (opt != 0) {
+
+				cout << endl;
+				cout << "Press 1 for Shawarma Corner\nPress 2 for Dhaba Corner\nPress 3 for EE_Canteen\n";
+				cout << "Press 4 for Staff_Canteen\nPress 5 for Cafeteria\nPress 6 for Fru Guy\nPress 7 to Check History\nPress 0 to exit\n";
+				cin >> opt;
+				system("cls");
+				if (opt == 1) {//shawarma corner
+					//menu
+
+					cout << "\nPress 0 for Zinger Shawarma\nPress 1 for Chicken Shawarma\nPress 2 for Chicken Mayo Shawarma\nPress 3 for Mekroni Shawarma\n";
+					cout << "Press 4 for Chicken Cheese Shawarma\n";
+
+					cout << "\nEnter Number of Items = ";
+					cin >> it;
+
+					cout << endl;
+
+					obj1.itemchosing(it);
+					cout << endl;
+					system("cls");
+
+					obj1.receipt(it,na);
+
+					cout << endl;
+
+					cout << "Total Bill = " << obj1.gettotalbill() << endl;
+					ofstream rfile(na,ios::app); 
+
+					if (rfile.is_open()) {
+						rfile << "Total Bill = " << obj1.gettotalbill() << endl << endl;
+						rfile.close(); 
+						
+					}
+					_getch();
+
+					cout << "\nPress 1 for Easypaisa\nPress 2 for Cash\n";
+					cin >> pay;
+					obj1.paying(pay);
+
+
+					cout << "\nYour Order Will be ready in around " << obj1.gettime() << " minutes" << endl;
+					_getch();
+					system("cls");
+					obj1.totalbill = 0;
+					obj1.time = 0;
+
+				}
+				else if (opt == 2) {//dhaba corner
+					cout << "\nPress 0 for Mayo Roll\nPress 1 for Seekh Kabab Roll\nPress 2 for Special Tea\nPress 3 for Chicken Sandwich\nPress 4 for Chicken Tikka\n";
+					cout << "Press 5 for Malai Seekh Boti\n";
+
+					cout << "\nEnter Number of Items = ";
+					cin >> it;
+
+					cout << endl;
+
+					obj2.itemchosing(it);
+					cout << endl;
+					system("cls");
+
+					obj2.receipt(it,na);
+
+					cout << endl;
+					cout << "Total Bill = " << obj2.gettotalbill() << endl;
+					ofstream rfile(na, ios::app);
+
+					if (rfile.is_open()) {
+						rfile << "Total Bill = " << obj2.gettotalbill() << endl << endl;
+						rfile.close();
+
+					}
+					_getch();
+
+					cout << "\nPress 1 for Easypaisa\nPress 2 for Cash\n";
+					cin >> pay;
+					obj2.paying(pay);
+
+
+					cout << "\nYour Order Will be ready in around " << obj2.gettime() << " minutes" << endl;
+					_getch();
+					system("cls");
+					obj2.totalbill = 0;
+					obj2.time = 0;
+				}
+				else if (opt == 3) //ee_canteen
+				{
+
+					cout << "\nPress 0 for Chicken Biryani\nPress 1 for Pizza Fries\nPress 2 for ZInger Burger\nPress 3 for Beef Burger";
+					cout << "\nPress 4 for CHicken Sandwich\nPress 5 for Zinger Roll\nPress 6 for Chicken Roll\n";
+
+					cout << "\nEnter Number of Items = ";
+					cin >> it;
+
+					cout << endl;
+
+					obj3.itemchosing(it);
+					cout << endl;
+					system("cls");
+
+					obj3.receipt(it, na);
+
+					cout << endl;
+					cout << "Total Bill = " << obj3.gettotalbill() << endl;
+					ofstream rfile(na, ios::app);
+
+					if (rfile.is_open()) {
+						rfile << "Total Bill = " << obj3.gettotalbill() << endl << endl;
+						rfile.close();
+
+					}
+					_getch();
+
+					cout << "\nPress 1 for Easypaisa\nPress 2 for Cash\n";
+					cin >> pay;
+					obj3.paying(pay);
+
+
+					cout << "\nYour Order Will be ready in around " << obj3.gettime() << " minutes" << endl;
+					_getch();
+					system("cls");
+					obj3.totalbill = 0;
+					obj3.time = 0;
+
+				}
+				else if (opt == 4) //ee_staff canteen
+				{
+
+					cout << "\nPress 0 for Lacha Paratha\nPress 1 for Chai\nPress 2 for Spring Roll\nPress 3 for Mini Pizza\nPress 4 for Aloo Paratha";
+					cout << "\nPress 5 for Samosa\nPress 6 for Knorr Noodles\nPress 7 for Coffee\n";
+
+					cout << "\nEnter Number of Items = ";
+					cin >> it;
+
+					cout << endl;
+
+					obj4.itemchosing(it);
+					cout << endl;
+					system("cls");
+
+					obj4.receipt(it, na);
+
+					cout << endl;
+					cout << "Total Bill = " << obj4.gettotalbill() << endl;
+					ofstream rfile(na, ios::app);
+
+					if (rfile.is_open()) {
+						rfile << "Total Bill = " << obj4.gettotalbill() << endl << endl;
+						rfile.close();
+
+					}
+					_getch();
+
+					cout << "\nPress 1 for Easypaisa\nPress 2 for Cash\n";
+					cin >> pay;
+					obj4.paying(pay);
+
+
+					cout << "\nYour Order Will be ready in around " << obj4.gettime() << " minutes" << endl;
+					_getch();
+					system("cls");
+					obj4.totalbill = 0;
+					obj4.time = 0;
+				}
+				else if (opt == 5) {//cafeteria
+
+					cout << "Press 0 for Spring roll \nPress 1 for chicken biryani\nPress 2 for CHicken Sandwich\n" << endl;
+					cout << "Enter no of items" << endl;
+					cin >> it;
+					cout << endl;
+
+					c1.itemchosing(it);
+					cout << endl;
+					system("cls");
+
+					c1.receipt(it, na);
+
+					cout << endl;
+					cout << "Total Bill = " << c1.gettotalbill() << endl;
+					ofstream rfile(na, ios::app);
+
+					if (rfile.is_open()) {
+						rfile << "Total Bill = " << c1.gettotalbill() << endl << endl;
+						rfile.close();
+
+					}
+					_getch();
+
+					cout << "\nPress 1 for Easypaisa\nPress 2 for Cash\n";
+					cin >> pay;
+					c1.paying(pay);
+
+
+					cout << "\nYour Order Will be ready in around " << c1.gettime() << " minutes" << endl;
+					_getch();
+					system("cls");
+					c1.totalbill = 0;
+					c1.time = 0;
+
+				}
+				else if (opt == 6) {//fry guy
+
+					cout << "Press 0 for Pizza fries \nPress 1 for Loaded Fries\nPress 2 for Flavour Fries\n" << endl;
+					cout << "Enter no of items" << endl;
+					cin >> it;
+					cout << endl;
+
+					f1.itemchosing(it);
+					cout << endl;
+					system("cls");
+
+					f1.receipt(it, na);
+
+					cout << endl;
+					cout << "Total Bill = " << f1.gettotalbill() << endl;
+					ofstream rfile(na, ios::app);
+
+					if (rfile.is_open()) {
+						rfile << "Total Bill = " << f1.gettotalbill() << endl<<endl;
+						rfile.close();
+
+					}
+					_getch();
+
+					cout << "\nPress 1 for Easypaisa\nPress 2 for Cash\n";
+					cin >> pay;
+					f1.paying(pay);
+
+
+					cout << "\nYour Order Will be ready in around " << f1.gettime() << " minutes" << endl;
+					_getch();
+					system("cls");
+					f1.totalbill = 0;
+					f1.time = 0;
+
+				}
+				else if (opt == 7) {
+				system("cls");
+				fstream readFile;
+
+				readFile.open(na, ios::in);
+
+				if (readFile.is_open()) {
+					string line;
+					while (getline(readFile, line)) {
+						cout << line << endl;
+					}
+				}
+				_getch();
+				system("cls");
+				}
+				
+			}
+
+
+
+        }
+        else if (sel == 3) {////////////////////////////testing services///////////////////////////////////////////////////////////////////
+
+		cout << "Have you Filled the Form (y/Y OR n/N)?\n";
+		cin >> form;
+
+		if (form == 'n' || form == 'N') {
+
+			flag = 0;
+		}
+		else {
+			flag = 1;
+		}
+
+		testing t1;
+		testing objdon;
+
+		if (flag == 0) {
+
+
+			srand(time(NULL));
+			
+			const int min1 = 100000;
+			const int max1 = 200000;
+			long int random_number = rand() % (max1 - min1 + 1) + min1;
+			t1.setARNnumber(random_number);
+
+			srand(time(NULL));
+
+			const int min2 = 300000;
+			const int max2 = 400000;
+			long int rand_num = rand() % (max2 - min2 + 1) + min2;
+			t1.setchallanno(rand_num);
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << " FAST ISL             NATIONAL UNIVERSITY OF COMPUTER                                           " << endl;
+			cout << "                                   AND                                                          " << endl;
+			cout << "                           EMERGING SCIENCES                                                    " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "                            PERSONAL INFORMATION                                                 " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "    Enter Student`s Name = ";
+			cin >> sn;
+			cout << "    Enter Father`s Name = ";
+			cin >> fn;
+			cout << "    Enter Your Complete Address = ";
+			cin >> address;
+			cout << "    Enter Student`s Gender = ";
+			cin >> gender;
+			cout << "    Enter Student`s CNIC NO. = ";
+			cin >> scnic;
+			cout << "    Enter Father`s CNIC NO. = ";
+			cin >> fcnic;
+			cout << "    Enter Student`s Date of Birth = ";
+			cin >> dob;
+			cout << "    Enter Your Country = ";
+			cin >> country;
+			cout << "    Enter Your City = ";
+			cin >> city;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			system("cls");
+
+
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                            BACKGROUND INFORMATION                                              " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                                                                                " << endl;
+			cout << "    Enter Father`s Occupation = ";
+			cin >> fo;
+			cout << "    Enter Father`s Salary = ";
+			cin >> fs;
+			cout << "    Enter  Mother`s Occupation = ";
+			cin >> mo;
+			cout << "    Enter Number of Persons Dependent on Father = ";
+			cin >> dep;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			system("cls");
+
+
+
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                            EDUCATIONAL INFORMATION                                              " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                                                                                " << endl;
+			cout << "    Enter Name of Your School = ";
+			cin >> school;
+			cout << "    Enter Name of College = ";
+			cin >> college;
+			cout << "    Enter  Matric Percentage = ";
+			cin >> mp;
+			cout << "    Enter Inter Percentage = ";
+			cin >> ip;
+			cout << "    Press 1 for NTS";
+			cout << "    Press 2 for SAT";
+			cout << "    Press 3 for FAST Aptitude Test\n";
+			cin >> ch;
+			if (ch == 1) {
+				cout << "    Enter NTS Marks = ";
+				cin >> nts;
+			}
+			else if (ch == 2) {
+				cout << "    Enter SAT-I Marks = ";
+				cin >> sat1;
+				cout << "    Enter SAT-II Marks = ";
+				cin >> sat2;
+			}
+			else if (ch == 3) {
+
+
+			}
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			system("cls");
+
+
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                       SELECTING FIELDS                                          " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "    Enter your First Priority = ";
+			cin >> fp;
+			cout << "    Enter your Second Priority = ";
+			cin >> sp;
+			cout << "    Enter your Third Priority = ";
+			cin >> tp;
+			cout << "    Enter your Fourth Priority = ";
+			cin >> fourp;
+			cout << "    Enter your Fifth Priority = ";
+			cin >> fifp;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			objdon.set1(fn, sn, address, gender, dob, country, city, fcnic, scnic);
+			objdon.set2(fs, dep, fo, mo);
+			objdon.set3(school, college, mp, ip);
+			objdon.set4(fp, sp, tp, fourp, fifp);
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "     Amount: RS-3000                                                                            " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "     Payment Method                                                                             " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "    Press:                                                                                      " << endl;
+			cout << "    1)Through kuickpay                                                                          " << endl;
+			cout << "    2)Through bank Challan                                                                      " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cin >> ch2;
+			system("cls");
+
+
+			if (ch2 == 1) {//full details
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                        KUICK PAY                                               " << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                                                                                " << endl;
+				cout << "    ARN Number = " << t1.getARNnumber() << "                                                    " << endl;
+				cout << "    Challan NO. = " << t1.getchallanno() << "                                                   " << endl;
+				cout << "    Name = " << objdon.getStudentName() << "                                                    " << endl;
+				cout << "    Amount = 3000" << "                                                                         " << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			}
+			else if (ch2 == 2) {//full details
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                          CHALLAN                                               " << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                                                                                " << endl;
+				cout << "     Name = " << objdon.getStudentName() << "                                                     " << endl;
+				cout << "     ARN Number  = " << t1.getARNnumber() << "												     " << endl;
+				cout << "     Challan NO. = " << t1.getchallanno() << "							     					 " << endl;
+				cout << "     Fee Amount = 3000" << "										       					     " << endl;
+				cout << "     Due Date = 10-july-2023" << "																 " << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+			}
+			_getch();
+			system("cls");
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                      DOCUMENT SUBMISSION                                       " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                                                                                " << endl;
+			cout << "     Copy of Matric Marksheet" << "															 " << endl;
+			cout << "     Copy of Inter Marksheet" << "																 " << endl;
+			cout << "     Copy of Domicile" << "																	 " << endl;
+			cout << "     Copy of PRC" << "																			 " << endl;
+			cout << "     Two recent Photographs" << "																 " << endl;
+			cout << "     Admit Card" << "																			 " << endl;
+			cout << "     Copy of Bay-Form" << "																	 " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			_getch();
+
+			system("cls");
+
+
+
+			room robj;
+
+			robj.display();
+			//robj.assignroom(4,5);
+			robj.assignroom();
+			_getch();
+			flag = 1;
+		}
+
+		system("cls");
+
+		if (flag == 1) {
+
+			//show there details by comparing there name
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "  FAST KAR             NATIONAL UNIVERSITY OF COMPUTER                                          " << endl;
+			cout << "                                    AND                                                         " << endl;
+			cout << "                            EMERGING SCIENCES                                                   " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "                             PERSONAL INFORMATION                                               " << endl;
+			cout << "                                                                                                " << endl;
+			cout << "      Student`s Name = " << objdon.getStudentName() << endl;
+			cout << endl;
+			cout << "      Father`s Name = " << objdon.getFatherName() << endl;
+			cout << endl;
+			cout << "      Your Complete Address = " << objdon.getAddress() << endl;
+			cout << endl;
+			cout << "      Student`s Gender = " << objdon.getGender() << endl;
+			cout << endl;
+			cout << "      Student`s CNIC NO. = " << objdon.getStudentCnic() << endl;
+			cout << endl;
+			cout << "      Father`s CNIC NO. = " << objdon.getFatherCnic() << endl;
+			cout << endl;
+			cout << "      Student`s Date of Birth = " << objdon.getDateOfBirth() << endl;
+			cout << endl;
+			cout << "      Your Country = " << objdon.getCountry() << endl;
+			cout << endl;
+			cout << "      Your City = " << objdon.getCity() << endl;
+			cout << endl;
+			cout << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			_getch();
+
+
+			system("cls");
+
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                            BACKGROUND INFORMATION                                              " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                                                                                " << endl;
+			cout << "      Fathers Occupation  = " << objdon.getFatherOccupation() << endl;
+			cout << "      Father`s Salary     = " << objdon.getFatherSalary() << endl;
+			cout << endl;
+			cout << "      Mother`s Occupation = " << objdon.getMotherOccupation() << endl;
+			cout << endl;
+			cout << "      Number of Persons Dependent on Father = " << objdon.getDependentPeople() << endl;
+			cout << endl;
+			cout << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			_getch();
+			system("cls");
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                            EDUCATIONAL INFORMATION                                              " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                                                                                " << endl;
+			cout << "     Name of Your School = " << objdon.getSchool() << endl;
+			cout << endl;
+			cout << "     Name of College = " << objdon.getCollege();
+			cout << endl;
+			cout << "     Matric Percentage = " << objdon.getMatric();
+			cout << endl;
+			cout << "     Inter Percentage = " << objdon.getInter();
+			cout << endl;
+			cout << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			_getch();
+			system("cls");
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                       SELECTING FIELDS                                          " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "     your First Priority = " << objdon.getFirst();
+			cout << endl;
+			cout << "     your Second Priority = " << objdon.getSecond();
+			cout << endl;
+			cout << "     your Third Priority = " << objdon.getThird();
+			cout << endl;
+			cout << "     your Fourth Priority = " << objdon.getFourth();
+			cout << endl;
+			cout << "     your Fifth Priority = " << objdon.getFifth();
+			cout << endl;
+			cout << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			_getch();
+			system("cls");
+
+			if (ch2 == 1) {//fill details
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                        KUICK PAY                                               " << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                                                                                " << endl;
+				cout << "    ARN Number = " << t1.getARNnumber();
+				cout << endl;
+				cout << "    Challan NO. = "<<t1.getchallanno();
+				cout << endl;
+				cout << "    Name = " << objdon.getStudentName();
+				cout << endl;
+				cout << "    Amount = 3000";
+				cout << endl;
+				cout << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+
+			}
+			else if (ch2 == 2) {//full details
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                          CHALLAN                                               " << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+				cout << "                                                                                                " << endl;
+				cout << "     Name = " << objdon.getStudentName();
+				cout << endl;
+				cout << "     ARN Number  = " << t1.getARNnumber();
+				cout << endl;
+				cout << "     Challan NO. = " << t1.getchallanno();
+				cout << endl;
+				cout << "     Fee Amount = 3000";
+				cout << endl;
+				cout << "     Due Date = 11-july-2024";
+				cout << endl;
+				cout << endl;
+				cout << "------------------------------------------------------------------------------------------------" << endl;
+			}
+			_getch();
+			system("cls");
+
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                      DOCUMENT SUBMISSION                                       " << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			cout << "                                                                                                " << endl;
+			cout << "     Copy of Matric Marksheet";
+			cout << endl;
+			cout << "     Copy of Inter Marksheet";
+			cout << endl;
+			cout << "     Copy of Domicile";
+			cout << endl;
+			cout << "     Copy of PRC";
+			cout << endl;
+			cout << "     Two recent Photographs";
+			cout << endl;
+			cout << "     Admit Card";
+			cout << endl;
+			cout << "     Copy of Bay-Form";
+			cout << endl;
+			cout << endl;
+			cout << "------------------------------------------------------------------------------------------------" << endl;
+			_getch();
+			system("cls");
+
+
+			}
+
+
+
+
+        }
+    }
+	
+
+}
